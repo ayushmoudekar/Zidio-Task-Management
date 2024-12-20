@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Home</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef7e8;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 40px;
+            background-color:  #d5d1d1;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        header .auth-buttons a {
+            text-decoration: none;
+            font-size: 25px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        header .auth-buttons .sign-in {
+            background-color: whitesmoke;
+            border: 1px solid #ccc;
+            color: #555;
+        }
+
+        header .auth-buttons .sign-up {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        /* Main Section */
+        main {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 25px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        main .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        main .cta-buttons a {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        main .cta-buttons .get-started {
+            background-color: #f58220;
+            color: white;
+        }
+
+        main .cta-buttons .discover {
+            background-color: transparent;
+            border: 1px solid #ccc;
+            color: #555;
+        }
+
+        .dashboard-preview {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dashboard-preview img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+           <a href="About.html"><img src="Images/Logo.png"></a> 
+        </div>
+        <nav>
+            <a href="Home.html"><b>Home</b></a>
+            <a href="About.html"><b>About</b></a>
+            <a href="Services.html"><b>Service</b></a>
+            <a href="Extra.html"><b>Task</b></a>
+            <a href="Contact.html"><b>Help</b></a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="Login.html" class="sign-in">Sign In</a>
+            <a href="Login.html" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1>Manage Your Task</h1>
+        <p>Encan boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible, and rewarding way. Let’s start!</p>
+        <div class="cta-buttons">
+            <a href="Extra.html" class="get-started">Get Started</a>
+            <a href="#" class="discover">Discover In Video</a>
+        </div>
+        <div class="dashboard-preview">
+            <img src="Images/Home.png" alt="Dashboard Preview">
+        </div>
+    </main>
+
+</body>
+</html>

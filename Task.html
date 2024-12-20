@@ -1,0 +1,341 @@
+<html>
+<head>
+    <title>Task</title>
+    <style>
+
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        }
+
+        body {
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        background-color: #eef7e8;
+        }
+
+        /* Header Section */
+        .header {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d5d1d1;
+        color: white;
+        padding: 0 20px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        }
+
+        .nav ul {
+         list-style: none;
+         display: flex;
+         gap: 20px;
+         }
+
+        .nav ul li {
+         display: inline;
+         }
+
+         .nav ul li a {
+          color: Black;
+          font-size: 35px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          transition: color 0.3s;
+          text-decoration: none;
+          }
+
+          .nav ul li a:hover {
+          color: #fdbfdf;
+          } 
+
+         /* Sidebar */
+         .sidebar {
+          width: 15%;
+         background-color: #bac6cf;
+         margin-top: 150px;
+         color:black;
+         padding: 20px;
+         height: 100vh;
+         }
+
+        .sidebar h1 {
+        margin-bottom: 30px;
+        padding-left: 60px;
+        }
+
+        .sidebar ul {
+        list-style: none;
+        }
+        .sidebar ul a{
+        text-decoration: none;
+        }
+
+        .sidebar ul li {
+        margin: 20px 0;
+        cursor: pointer;
+        font-size: 25px;
+        }
+
+        /* Main Content */
+        .main-content {
+        width: 67%;
+        padding: 20px;
+        margin-top: 130px;
+        }
+
+        .dashboard {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        }
+
+        .task-card {
+        background-color: #bac6cf;
+        width: 23%;
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        }
+
+        .overdue {
+        background-color: #bac6cf; 
+        color: black;
+        }
+
+        .due-today {
+         background-color: #bac6cf;
+         color: black;
+         }
+
+         /* Tasks Table */
+          .tasks h2 {
+          margin-bottom: 20px;
+          font-size: 30px;
+          }
+
+          table {
+          width: 100%;
+          border-collapse: collapse;
+         }
+
+         thead {
+         background-color: #f0f0f0;
+         }
+
+         th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+        }
+
+        .overdue {
+         color: black;
+         }
+
+        .due-today {
+        color: black;
+        }
+
+        /* Task Statistics */
+        .task-statistics {
+        width: 18%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color:  #bac6cf;
+        margin-top: 150px;
+        padding: 20px;
+        box-sizing: border-box;
+        }
+
+        .task-statistics h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        }
+       .task-statistics ul li{
+        font-size: 25px;
+        }
+
+        .chart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        }
+
+        ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        ul li {
+        margin: 10px 0;
+        font-size: 14px;
+        }
+
+        ul li span {
+        font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <a href="About.html"><img src="Images/Logo.png"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Home.html"><b>Home</b></a></li>
+                    <li><a href="About.html"><b>About</b></a></li>
+                    <li><a href="Services.html"><b>Service</b></a></li>
+                    <li><a href="Extra.html"><b>Task</b></a></li>
+                    <li><a href="Contact.html"><b>Help</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    <!-- Navigation Sidebar -->
+    <div class="sidebar">
+        <h1>Contents</h1>
+        <ul>
+            <a href="Extra.html"><b><li>Home</li></b></a>
+            <a href="Task.html"><b><li>All Tasks</li></b></a>
+            <a href="Task.html"><b><li>Unassigned</li></b></a>
+            <a href="Task.html"><b><li>Assigned To Me</li></b></a>
+            <a href="Task.html"><b><li>Overdue</li></b></a>
+            <a href="Task.html"><b><li>Due Today</li></b></a>
+            <a href="Task.html"><b><li>Due This Week</li></b></a>
+            <a href="Extra.html"><b><li>Settings</li></b></a>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="dashboard">
+            <div class="task-card">8 <br> All Tasks</div>
+            <div class="task-card">4 <br> Incomplete</div>
+            <div class="task-card overdue">2 <br> Overdue</div>
+            <div class="task-card due-today">1<br> Due Today</div>
+        </div>
+
+        <!-- Latest Tasks Table -->
+        <div class="tasks">
+            <h2>Latest Tasks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task ID</th>
+                        <th>Title</th>
+                        <th>Task Status</th>
+                        <th>Priority</th>
+                        <th>Due Date</th>
+                        <th>Modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TASK1</td>
+                        <td>Develop New Feature</td>
+                        <td>On Hold</td>
+                        <td>Medium</td>
+                        <td>12/12/2024</td>
+                        <td>10 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK2</td>
+                        <td>Fix Critical Bug</td>
+                        <td>Open</td>
+                        <td>Medium</td>
+                        <td class="overdue">27/11/2024</td>
+                        <td>14 minutes ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK3</td>
+                        <td>Database Optimization</td>
+                        <td>Open</td>
+                        <td>Medium</td>
+                        <td class="due-today">30/11/2024</td>
+                        <td>16 minutes ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK4</td>
+                        <td>UI/UX Design Update</td>
+                        <td>On Hold</td>
+                        <td>Medium</td>
+                        <td>05/12/2024</td>
+                        <td>20 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK5</td>
+                        <td>Set Up Continuous Integration</td>
+                        <td>Open</td>
+                        <td>Medium</td>
+                        <td>12/12/2024</td>
+                        <td>27 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK6</td>
+                        <td>Client Feedback Review</td>
+                        <td>On Hold</td>
+                        <td>Medium</td>
+                        <td>09/12/2024</td>
+                        <td>45 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK7</td>
+                        <td>Update Documentation</td>
+                        <td>On Hold</td>
+                        <td>Medium</td>
+                        <td>18/12/2024</td>
+                        <td>47 minute ago</td>
+                    </tr>
+                    <tr>
+                        <td>#TASK8</td>
+                        <td>Create new SharePoint library</td>
+                        <td>Open</td>
+                        <td>Medium</td>
+                        <td style="background-color: #bac6cf;">18/11/2024</td>
+                        <td>58 minute ago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Task Statistics -->
+    <div class="task-statistics">
+        <h1>Task Statistics</h1>
+        <div class="chart">
+            <div class="pie-chart"></div>
+        </div>
+        <ul>
+            <li>Open: <span>8</span></li>
+            <li>In Progress: <span>4</span></li>
+            <li>Completed: <span>4</span></li>
+            <li>On Hold: <span>4</span></li>
+            <li>Active: <span>75%</span></li>
+            <li>Closed: <span>25%</span></li>
+        </ul>
+        <img src="Images/Graph 1.png" style="height: 350px;width: 350px;">
+        <img src="Images/Graph 2.png">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<html>
+<head>
+    <title>Task</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef7e8;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #d5d1d1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 40px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 38px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        /* Left Panel */
+        .left-panel {
+            width: 40%;
+            background-color:  #bfcbbf;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-right: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .left-panel h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #000;
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        th {
+            background-color: #d3ffd3;
+            color: #000;
+        }
+
+        td {
+            background-color: #f9fff9;
+            
+        }
+        td a{
+            text-decoration: none;
+        }
+
+        /* Right Panel */
+        .right-panel {
+            width: 55%;
+            background-color: #bfcbbf;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .right-panel h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .add-task {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .add-task input {
+            width: 80%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .add-task button {
+            padding: 10px 40px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .add-task button:hover {
+            background-color: #45a049;
+        }
+
+        .task-list {
+            
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .task-item span {
+            font-size: 20px;
+        }
+
+        .task-item .actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .task-item .actions button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
+        .Buttons{
+            padding-left: 990px;
+            margin-top: 80px;
+        }
+        .Buttons button{
+            background-color: lightgreen;
+            border: 1px solid #ccc;
+            color: #555;
+            font-size: 30px;
+           }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Zidio Logo">
+        </div>
+        <nav>
+            <a href="Home.html"><b>Home</b></a>
+            <a href="About.html"><b>About</b></a>
+            <a href="Services.html"><b>Service</b></a>
+            <a href="Extra.html"><b>Task</b></a>
+            <a href="Contact.html"><b>Help</b></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <h2>All Tasks</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task ID</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="Task.html">#TASK1</a></td>
+                        <td><a href="Task.html">Develop New Feature</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK2</a></td>
+                        <td><a href="Task.html">Fix Critical Bug</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK3</a></td>
+                        <td><a href="Task.html">Database Optimization</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK4</a></td>
+                        <td><a href="Task.html">UI/UX Design Update</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK5</a></td>
+                        <td><a href="Task.html">Set Up Continuous Integration</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK6</a></td>
+                        <td><a href="Task.html">Client Feedback Review</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK7</a></td>
+                        <td><a href="Task.html">Update Documentation</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="Task.html">#TASK8</a></td>
+                        <td><a href="Task.html">Create new SharePoint library</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <h2>ADD TASK</h2>
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Type a task">
+                <button onclick="addTask()">ADD</button>
+            </div>
+            <div class="task-list" id="taskList">
+                <div class="task-item">
+                    <span>Create new SharePoint library</span>
+                    <div class="actions">
+                        <button onclick="editTask(this)"><img src="Images/editing.png" alt="Edit"></button>
+                        <button onclick="deleteTask(this)"><img src="Images/bin.png" alt="Delete"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="Buttons">
+            <a href="Task.html"><button type="button"><b>Detail View → </b></button></a>
+         </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

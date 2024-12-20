@@ -1,0 +1,172 @@
+<html>
+<head>
+    <title>Service</title>
+    <style>
+
+        * {
+          margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+           }
+           body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef7e8;
+        }
+
+        /* Header Section */
+            .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 40px;
+            background-color:  #d5d1d1;
+            }
+
+            .header .logo {
+             font-size: 1.5em;
+             font-weight: bold;
+            }
+
+            .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            }
+
+            .nav ul li {
+            display: inline;
+             }
+
+            .nav ul li a {
+            text-decoration: none;
+            color: Black;
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: color 0.3s;
+            }
+
+            .nav ul li a:hover {
+             color: #fdbfdf;
+             } 
+
+            /* Services Section */
+            .services-section {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1250px;
+            height: 550px;
+            padding: 20px;
+            background-color: rgb(218, 205, 205);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 180px;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .service-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .service-box h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .service-box a{
+            text-decoration: none;
+        }
+
+        .service-box p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+           <a href="About.html"><img src="Images/Logo.png"></a> 
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="Home.html"><b>Home</b></a></li>
+                <li><a href="About.html"><b>About</b></a></li>
+                <li><a href="Services.html"><b>Service</b></a></li>
+                <li><a href="Extra.html"><b>Task</b></a></li>
+                <li><a href="Contact.html"><b>Help</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-icon">📝</div>
+               <a href="Extra.html" ><h3>Task Creation</h3></a>
+                <p>Effortlessly create and manage tasks with intuitive tools.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">🤝</div>
+                <a href="Extra.html"><h3>Collaboration Tools</h3></a>
+                <p>Enhance teamwork with advanced collaboration features.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">⏰</div>
+                <a href="Extra.html"><h3>Due Date Management</h3></a>
+                <p>Set deadlines and track task completion efficiently.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">📊</div>
+                <a href="Extra.html"><h3>Progress Reporting</h3></a>
+                <p>Monitor task progress with real-time updates.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">📈</div>
+                <a href="Extra.html"><h3>Report Analysis</h3></a>
+                <p>Analyze detailed reports for better decision-making.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-icon">🗓️</div>
+                <a href="Extra.html"><h3>Weekly Planning</h3></a>
+                <p>Plan weekly tasks to boost productivity and organization.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,227 @@
+<html>
+<head>
+    <title>Help</title>
+    <style>
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef7e8;
+            color: #333;
+        }
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        }
+
+        /* Header Section */
+        .header {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:#d5d1d1;
+        color: white;
+        padding: 0 20px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+         font-size: 1.5em;
+         font-weight: bold;
+         }
+
+         .nav ul {
+         list-style: none;
+         display: flex;
+         gap: 20px;
+         }
+
+         .nav ul li {
+         display: inline;
+          }
+
+         .nav ul li a {
+         text-decoration: none;
+         color: black;
+         font-size: 35px;
+         transition: color 0.3s;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav ul li a:hover {
+         color: #fdbfdf;
+         }
+
+        /* Contact Section */
+        .contact-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .contact-container {
+            background-color: #c5dfe7;
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .form-container {
+            flex: 1;
+        }
+
+        .form-container h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        form input, form textarea, form button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #00b4d8;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #0077b6;
+        }
+
+        .illustration img {
+            max-width: 400px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .contact-box {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .contact-box i {
+            font-size: 2rem;
+            color: #ff7f50;
+            margin-bottom: 10px;
+        }
+
+        .contact-box h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .contact-box p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .contact-box span {
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0077b6;
+            color: #fff;
+            padding: 10px;
+            margin-top: 140px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="About.html"><img src="Images/Logo.png"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="Home.html"><b>Home</b></a></li>
+                <li><a href="About.html"><b>About</b></a></li>
+                <li><a href="Services.html"><b>Service</b></a></li>
+                <li><a href="Extra.html"><b>Task</b></a></li>
+                <li><a href="Contact.html"><b>Help</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="illustration">
+                <img src="Images/Contact.png" alt="Contact Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="contact-box">
+            <i>&#x1F3E0;</i>
+            <h3>VISIT US</h3>
+            <span>Jigani, Bengaluru, Karnataka</span>
+        </div>
+        <div class="contact-box">
+            <i>&#x260E;</i>
+            <h3>CALL US</h3>
+            <span>+91 7836352726</span>
+        </div>
+        <div class="contact-box">
+            <i>&#x2709;</i>
+            <h3>CONTACT US</h3>
+            <span>support@zidio.in</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zidio Development. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
