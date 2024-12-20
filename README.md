@@ -18,4 +18,16 @@ Technologies Used: HTML , CSS , JAVASCRIPT & Modern Frameworks
 
 Output : 
 
-![image alt]()
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%201.png) 
+
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%202.png) 
+
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%203.png) 
+
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%204.png) 
+
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%205.png) 
+
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%206.png) 
+
+![image alt](https://github.com/ayushmoudekar/Zidio-Task-Management/blob/f340cebf1f5f3b579daf72b07fccb1e1a6fc4928/Output/Output%207.png) 
